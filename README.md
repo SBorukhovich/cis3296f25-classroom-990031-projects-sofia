@@ -10,7 +10,7 @@ Provide here instructions on how to use your application.
 ```
 python -m uvicorn test:app --reload --port 8000
 ```
-- Go to http://127.0.0.1:8000/. You will see subscriptions in JSON. 
+- Go to http://127.0.0.1:8000/subscriptions. You will see subscriptions in JSON. 
 
 # How to contribute
 Follow this project board to know the latest status of the project: [http://...]([http://...])  
