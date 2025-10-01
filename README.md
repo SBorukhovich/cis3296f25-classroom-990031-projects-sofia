@@ -1,8 +1,8 @@
-# Project Name
-Put here a short paragraph describing your project. 
-Adding an screenshot or a mockup of your application in action would be nice.  
+# Subscription Keeper
+A subscription manager and splitter.
+A user signs in and adds all of their personal subscriptions (Netflix, Spotify, YouTube, Microsoft 365 Family, Amazon) with cost and renewal information. For shared subscriptions, the user can add assign friends. It will calculate each participant’s share of the cost. There is going to be a dashboard with upcoming renewals, total monthly spending, and outstanding balances. The user can send notifications to friends to reimburse their share. The product gives users a single, organized view of their digital expenses and an easy way to track and split costs.
 
-![This is a screenshot.](images.png)
+![This is a screenshot.](Dashboard.png)
 # How to run
 Provide here instructions on how to use your application.   
 - Download the latest binary from the Release section on the right on GitHub.  
