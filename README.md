@@ -8,13 +8,9 @@ Provide here instructions on how to use your application.
 - Download the latest binary from the Release section on the right on GitHub.  
 - On the command line uncompress using
 ```
-tar -xzf  
+python -m uvicorn test:app --reload --port 8000
 ```
-- On the command line run with
-```
-./hello
-```
-- You will see Hello World! on your terminal. 
+- Go to http://127.0.0.1:8000/. You will see subscriptions in JSON. 
 
 # How to contribute
 Follow this project board to know the latest status of the project: [http://...]([http://...])  
