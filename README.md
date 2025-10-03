@@ -7,6 +7,14 @@ A user signs in and adds all of their personal subscriptions (Netflix, Spotify, 
 Provide here instructions on how to use your application.   
 - Download the latest binary from the Release section on the right on GitHub.  
 - On the command line uncompress using
+
+- Set up virtual environment.
+```
+ python -m venv .venv
+ source .venv/bin/activate 
+ pip install -r requirements.txt
+```
+
 ```
 python -m uvicorn test:app --reload --port 8000
 ```
