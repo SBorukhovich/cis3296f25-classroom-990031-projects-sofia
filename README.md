@@ -4,10 +4,6 @@ A user signs in and adds all of their personal subscriptions (Netflix, Spotify, 
 
 ![This is a screenshot.](Dashboard.png)
 # How to run
-Provide here instructions on how to use your application.   
-- Download the latest binary from the Release section on the right on GitHub.  
-- On the command line uncompress using
-
 - Set up virtual environment.
 ```
  python -m venv .venv
@@ -15,18 +11,25 @@ Provide here instructions on how to use your application.
  pip install -r requirements.txt
 ```
 
+# Proof Of Concept
+run this to test endpoints
 ```
-python -m uvicorn test:app --reload --port 8000
+python -m uvicorn proofOfConcept:app --reload --port 8000
 ```
-- Go to http://127.0.0.1:8000/subscriptions. You will see subscriptions in JSON. 
+Go to http://127.0.0.1:8000/subscriptions. You will see subscriptions in JSON.
+- [{"id":1,"name":"Netflix","cost":15.99,"shared":true},{"id":2,"name":"Spotify","cost":11.99,"shared":false}]
 
-# How to contribute
-Follow this project board to know the latest status of the project: [http://...]([http://...])  
-
-### How to build
-- Use this github repository: ... 
-- Specify what branch to use for a more stable release or for cutting edge development.  
-- Use InteliJ 11
-- Specify additional library to download if needed 
-- What file and target to compile and run. 
-- What is expected to happen when the app start. 
+Initialize firebase
+  generate token
+  ```
+  python get_token.py 
+  ```
+  Initialize Firebase Admin
+  ```
+  uvicorn initFirebase:app --reload
+  ```
+  make request with generated token:
+  ```
+  curl -H "Authorization: Bearer <TOKEN>" http://127.0.0.1:8000/protected
+  ```
+  this will result in {"message":"Welcome, test@gmail.com! Your UID is __."}. Allows to sign-in through Firebase.
